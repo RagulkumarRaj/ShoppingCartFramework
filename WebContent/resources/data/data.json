@@ -1,0 +1,22 @@
+[
+{
+"name":"nexus 5x",
+"price":"25000",
+"image":"nexus"
+},{
+"name":"iphone 6s",
+"price":"55000",
+"image":"iphone"
+},{
+"name":"Xperia ZR",
+"price":"15000",
+"image":"xperiazr"
+},{
+"name":"Mi 4i",
+"price":"12000",
+"image":"mi4i"
+},{
+"name":"Redmi Note 3",
+"price":"8000",
+"image":"redminote3"
+}]
