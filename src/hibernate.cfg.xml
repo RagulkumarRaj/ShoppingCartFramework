@@ -13,5 +13,6 @@
         <property name="show_sql">true</property>
         <property name="hbm2ddl.auto">create</property>
         <mapping class="com.shoppingCart.dao.entity.Product" />
+        <mapping class="com.shoppingCart.dao.entity.ProductWithImage" />
     </session-factory>
 </hibernate-configuration>

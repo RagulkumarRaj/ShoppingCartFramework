@@ -4,6 +4,7 @@ ProductName varchar(100) NOT NULL
  );
  
  select * from Product
+ select * from ProductWithImage
  
  drop table Product
  

@@ -17,7 +17,9 @@
 </head>
 <body ng-app="Appln" ng-controller="TestCtrl">
 <div class="container">
-<h3>Welcome</h3>
+<h3>Welcome</h3><span></span><span></span><span></span>
+<a href="<c:url value="addProduct"/>">Add Product</a>
+<a href="<c:url value="/resources/js/lib/jquery.min.js" />"></script>
 
 <div class="form-group has-feedback">
 <label for="search" class="sr-only">Search</label>
