@@ -32,7 +32,7 @@ public class ProductWithImage{
 	@Column(name = "cost")
 	private int cost;
 
-	@Column(name = "image")
+	@Column(name = "image", unique = false, nullable = false, length = 100000)
 	@Lob
 	private byte[] imageByteData;
 

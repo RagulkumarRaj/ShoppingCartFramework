@@ -12,7 +12,7 @@
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Test</servlet-name>
+    <servlet-name>ShoppingCartFramework</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>

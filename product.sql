@@ -4,7 +4,7 @@ ProductName varchar(100) NOT NULL
  );
  
  select * from Product
- select * from ProductWithImage
+ select * from PRODUCTWITHIMAGE
  
  drop table Product
  

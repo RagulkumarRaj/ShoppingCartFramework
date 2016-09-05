@@ -56,9 +56,11 @@
 <div class="col-sm-10">
 <div ng-repeat="prod in products" class="col-sm-4">
 <div class="container" style="border:brown solid 1px">
-<img alt="{{prod.name}}" src="resources/images/{{prod.image}}.jpeg">
-<h3>{{prod.name}}</h3>
-<span><h5>Rs {{prod.price}}</h5></span>
+<!-- <img alt="{{prod.name}}" src="resources/images/{{prod.image}}.jpeg"> -->
+<img src="data:image/PNG;base64,{{prod.imageByteData | bracketless}}" alt="{{prod.productName}}">
+<h3>{{prod.productId}}</h3>
+<h3>{{prod.productName}}</h3>
+<span><h5>Rs {{prod.cost}}</h5></span>
 <!-- <input id="input-2ba" type="number" class="rating" min="0" max="5" step="0.5" data-stars=5
     data-symbol="&#xek005;" data-default-caption="{rating} hearts" data-star-captions="{}"> -->
 <h6>EMI from Rs. 1,261</h6>

@@ -11,8 +11,8 @@
         <property name="connection.pool_size">1</property>
         <property name="hibernate.dialect"> org.hibernate.dialect.HSQLDialect</property>
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">validate</property>
         <mapping class="com.shoppingCart.dao.entity.Product" />
-        <mapping class="com.shoppingCart.dao.entity.ProductWithImage" />
+        <!-- <mapping class="com.shoppingCart.dao.entity.ProductWithImage" /> -->
     </session-factory>
 </hibernate-configuration>

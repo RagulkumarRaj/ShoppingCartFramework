@@ -6,7 +6,7 @@ import com.sun.org.apache.xml.internal.security.utils.Base64;
 
 @Entity
 @Table(name = "PRODUCT")
-public class Product {
+public class ProductBk {
 	@Id
 	@GeneratedValue
 	@Column(name = "product_id")
@@ -20,10 +20,9 @@ public class Product {
 
 	@Column(name = "image", unique = false, nullable = false, length = 100000)
 	@Lob
-	//private byte[] imageByteData;
-	private char[] imageByteData;
+	private byte[] imageByteData;
 
-	public Product() {
+	public ProductBk() {
 	}
 
 	/*
@@ -51,11 +50,11 @@ public class Product {
 		this.productCost = productCost;
 	}
 
-	public char[] getImageByteData() {
+	public byte[] getImageByteData() {
 		return imageByteData;
 	}
 
-	public void setImageByteData(char[] imageByteData) {
+	public void setImageByteData(byte[] imageByteData) {
 		this.imageByteData = imageByteData;
 	}
 }

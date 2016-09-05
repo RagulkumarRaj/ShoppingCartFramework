@@ -8,3 +8,10 @@ app.controller('TestCtrl', function($scope, $http){
 	$scope.products = data;
 	});
 });
+app.filter('bracketless',function() {
+    return function(input) {
+        if (input) {
+            return input.replace(/\(/g,"[").replace(/\)/g,"]");  
+        }
+    }
+});
