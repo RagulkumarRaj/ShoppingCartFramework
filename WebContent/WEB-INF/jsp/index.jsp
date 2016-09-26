@@ -19,7 +19,6 @@
 <div class="container">
 <h3>Welcome</h3><span></span><span></span><span></span>
 <a href="<c:url value="addProduct"/>">Add Product</a>
-<a href="<c:url value="/resources/js/lib/jquery.min.js" />"></script>
 
 <div class="form-group has-feedback">
 <label for="search" class="sr-only">Search</label>
@@ -57,7 +56,8 @@
 <div ng-repeat="prod in products" class="col-sm-4">
 <div class="container" style="border:brown solid 1px">
 <!-- <img alt="{{prod.name}}" src="resources/images/{{prod.image}}.jpeg"> -->
-<img src="data:image/PNG;base64,{{prod.imageByteData | bracketless}}" alt="{{prod.productName}}">
+<h3>{{prod.imageByteData}}</h3>
+<img src="data:image/PNG;base64,{{prod.imageByteData}}" alt="{{prod.productName}}">
 <h3>{{prod.productId}}</h3>
 <h3>{{prod.productName}}</h3>
 <span><h5>Rs {{prod.cost}}</h5></span>
