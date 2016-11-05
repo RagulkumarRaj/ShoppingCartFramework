@@ -6,6 +6,7 @@ app.controller('TestCtrl', function($scope, $http){
 	//});
 	$http.get('viewProductList').success(function(data){
 	$scope.products = data;
+	//alert kkjk
 	});
 });
 app.filter('bracketless',function() {
