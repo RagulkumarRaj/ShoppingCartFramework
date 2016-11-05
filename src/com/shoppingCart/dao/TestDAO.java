@@ -59,7 +59,6 @@ public Integer addProduct(Product product) {
 		//prod.setProductName(productName);
 		//prod.setCost(cost);
 		productId = (Integer) session.save(product);
-		new ArrayList().;
 		tx.commit();
 	} catch (HibernateException e) {
 		if (tx != null)
